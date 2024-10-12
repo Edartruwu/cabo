@@ -13,7 +13,7 @@ export default function About() {
           <p className="text-[20px] text-[#254FFF] font-bold">
             Nuestra Empresa
           </p>
-          <h3 className="text-[36px] text-[#003440] font-bold pb-[25px]">
+          <h3 className="text-[36px] text-[#182D54] font-bold pb-[25px]">
             Brindamos un
             <br /> Servicio Seguro y <br /> Confiable
           </h3>

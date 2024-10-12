@@ -68,6 +68,10 @@ body {
   }
 }
 
+.ribbon {
+  clip-path: polygon(75% 0%, 100% 100%, 0% 100%, 0 51%, 0% 0%);
+}
+
 @layer base {
   * {
     @apply border-border;

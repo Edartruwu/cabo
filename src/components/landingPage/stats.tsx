@@ -8,7 +8,7 @@ import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 export default function Stats() {
   return (
     <main className="w-full pt-5 px-5 md:px-32">
-      <div className="bg-[#f4f4f4] py-[40px] box-border grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-3 px-10">
+      <div className="bg-[#f4f4f4] py-[40px] box-border grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-3 px-10">
         <div className="flex flex-col text-center items-center">
           <NotepadText className="w-12 h-12 stroke-[#5f5f5f]" />
           {/* <FontAwesomeIcon icon={faClipboard}/> */}

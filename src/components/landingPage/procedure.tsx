@@ -13,7 +13,7 @@ export default function Procedure() {
           <p className="text-[20px] text-[#254FFF] font-bold">
             Tu Casillero en Estados Unidos
           </p>
-          <h3 className="md:text-[47px] text-[30px] text-[#003440] font-bold pb-[25px]">
+          <h3 className="md:text-[47px] text-[30px] text-[#182D54] font-bold pb-[25px]">
             Una Dirección Física Donde Llegarán Todas Tus Compras.
           </h3>
         </div>

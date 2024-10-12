@@ -8,7 +8,7 @@ export default function How() {
     <main className="mt-44 px-5 md:px-20 pb-20">
       <div className="grid place-items-center text-center">
         <p className="text-[20px] text-[#254FFF] font-bold">¡Cómo funciona!</p>
-        <h3 className="md:text-[47px] text-[30px] text-[#003440] font-bold pb-[25px]">
+        <h3 className="md:text-[47px] text-[30px] text-[#182D54] font-bold pb-[25px]">
           Fácil, Rápido y Seguro en cuatro <br /> simples pasos
         </h3>
       </div>

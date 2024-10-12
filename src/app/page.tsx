@@ -2,6 +2,7 @@ import About from "@/components/landingPage/about";
 import How from "@/components/landingPage/how";
 import Procedure from "@/components/landingPage/procedure";
 import Stats from "@/components/landingPage/stats";
+import Testimonial from "@/components/landingPage/testimonials";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <About />
       <Procedure />
       <How />
+      <Testimonial />
     </main>
   );
 }
