@@ -1,9 +1,9 @@
 import About from "@/components/landingPage/about";
+import { CompanyLogos } from "@/components/landingPage/companyLogos";
 import How from "@/components/landingPage/how";
 import Procedure from "@/components/landingPage/procedure";
 import Stats from "@/components/landingPage/stats";
 import Testimonial from "@/components/landingPage/testimonials";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       <Procedure />
       <How />
       <Testimonial />
+      <CompanyLogos />
     </main>
   );
 }
