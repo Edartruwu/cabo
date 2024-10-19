@@ -7,7 +7,7 @@ import Testimonial from "@/components/landingPage/testimonials";
 
 export default function Home() {
   return (
-    <main className="flex flex-col space-y-32">
+    <main className="flex flex-col space-y-10 md:space-y-32">
       <Stats />
       <About />
       <Procedure />

@@ -1,9 +1,7 @@
 "use client";
 
-import { ArrowRight, Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
 import { ProcedureImg } from "../Images/img";
-import Link from "next/link";
 
 export default function Procedure() {
   return (
@@ -72,12 +70,6 @@ export default function Procedure() {
             </li>
           </ul>
         </div>
-        <Link href="#">
-          <Button className="mt-[40px] flex space-x-3 hover:space-x-6 hover:transition-all hover:duration-150 ease-out px-0 py-0 w-[180px] h-[55px] bg-[#00044B] hover:bg-[#00044B]">
-            <p>Ver más </p>
-            <ArrowRight />
-          </Button>
-        </Link>
       </div>
       <div className="relative">
         <ProcedureImg />
