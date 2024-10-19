@@ -53,7 +53,7 @@ export function CompanyLogos() {
         },
     ]
   const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: false })
   )
 
   return (
@@ -75,8 +75,8 @@ export function CompanyLogos() {
                 loop: true,
             }}
             className="w-full"
-            onMouseEnter={plugin.current.stop}
-            onMouseLeave={plugin.current.reset}
+            // onMouseEnter={plugin.current.stop}
+            // onMouseLeave={plugin.current.reset}
             >
             <CarouselContent className="h-full">
                 {image.map((item) => (

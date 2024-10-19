@@ -25,8 +25,9 @@ export function ProcedureImg() {
         alt=""
         className="w-full object-contain"
         sizes="100%"
-        width={100}
-        height={0}
+        // width={100}
+        // height={0}
+        fill
       />
     </>
   );

@@ -5,7 +5,7 @@ import { Card } from "../ui/card";
 
 export default function How() {
   return (
-    <main className="mt-44 px-5 md:px-20 pb-20">
+    <main className="nd:mt-44 mt-5 px-5 md:px-20 pb-20">
       <div className="grid place-items-center text-center">
         <p className="text-[20px] text-[#254FFF] font-bold">¡Cómo funciona!</p>
         <h3 className="md:text-[47px] text-[30px] text-[#182D54] font-bold pb-[25px]">

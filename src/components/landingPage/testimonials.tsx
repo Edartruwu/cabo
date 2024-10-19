@@ -156,7 +156,7 @@ export default function Testimonial() {
                       </p>
                     </CardContent>
                   </Card>
-                  <div className="ribbon bg-[#182D54] w-[25%] bottom-0 font-bold py-3 px-5 h-10 z-20 absolute text-white">
+                  <div className="ribbon bg-[#182D54] w-[70%] md:w-[25%] bottom-0 font-bold py-3 px-5 h-10 z-20 absolute text-white">
                     {item.name}
                   </div>
                 </div>

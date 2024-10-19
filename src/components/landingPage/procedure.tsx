@@ -5,7 +5,7 @@ import { ProcedureImg } from "../Images/img";
 
 export default function Procedure() {
   return (
-    <main className="grid md:grid-cols-procedure mt-44 pt-32 gap-30 px-5 md:px-32 pb-20 auto-rows-fr md:auto-cols-min bg-procedure bg-no-repeat bg-cover bg-zinc-200 bg-blend-screen">
+    <main className="grid md:grid-cols-procedure mt-6 md:mt-44 pt-32 gap-30 px-5 md:px-32 pb-20  auto-rows-auto md:auto-rows-fr md:auto-cols-min bg-procedure bg-no-repeat bg-cover bg-zinc-200 bg-blend-screen">
       <div className="flex flex-col space-x-3 items-start">
         <div className="flex flex-col space-y-2">
           <p className="text-[20px] text-[#254FFF] font-bold">
@@ -71,7 +71,7 @@ export default function Procedure() {
           </ul>
         </div>
       </div>
-      <div className="relative">
+      <div className="relative h-[500px] md:h-auto">
         <ProcedureImg />
       </div>
     </main>
