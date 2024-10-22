@@ -1,9 +1,7 @@
 "use client";
 
-import { Medal, NotepadText, Trophy, Users, Users2 } from "lucide-react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Medal, NotepadText, Trophy, Users2 } from "lucide-react";
 // import { far } from '@awesome.me/kit-KIT_CODE/icons'
-import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 
 export default function Stats() {
   return (
@@ -13,7 +11,22 @@ export default function Stats() {
           <NotepadText className="w-12 h-12 stroke-[#5f5f5f]" />
           {/* <FontAwesomeIcon icon={faClipboard}/> */}
           <div className="flex flex-col">
-            <h3 className="text-[#052E56] text-[45px] font-bold">4,500</h3>
+            <div className="flex space-x-1 text-[#052E56] text-[45px] font-bold">
+              <div className="h-20 overflow-hidden">
+
+                <div className='relative -translate-y-[155px] flex flex-col space-y-2'>
+                    <p className="">1</p>
+                    <p className="">2</p>
+                    <p className="">3</p>
+                    <p className="">4</p>
+                </div>
+              </div>
+              <div>,</div>
+              <div>5</div>
+              <div>0</div>
+              <div>0</div>
+            </div>
+            {/* <h3 className="text-[#052E56] text-[45px] font-bold">4,500</h3> */}
             <p className="text-[15px] text-[#666666] font-bold">
               Envíos de paquetes
             </p>
