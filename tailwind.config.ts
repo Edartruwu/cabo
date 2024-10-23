@@ -78,7 +78,6 @@
 // };
 // export default config;
 
-
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
@@ -143,23 +142,55 @@ const config: Config = {
       },
       backgroundImage: {
         procedure: "url(/wc-bg2.webp)",
+        background: "url(/banners/Banner_fondo.png)",
       },
       keyframes: {
         slideUp: {
-          '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(calc(-78%))' },
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(calc(-78%))" },
         },
         slideUp2: {
-          '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(calc(-89%))' },
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(calc(-89%))" },
+        },
+        heroSlide: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
+        opposite: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(-100%)" },
+        },
+        herotext1: {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
+        oppositeText1: {
+          "0%": { transform: "translateY(0%)" },
+          "100%": { transform: "translateY(100%)" },
+        },
+        opacity1: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        opacity2: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
         },
       },
       animation: {
-        slideUp: 'slideUp 5s ease-in-out forwards',
-        slideUp2: 'slideUp2 2s ease-in-out forwards',
-        slideUp3: 'slideUp2 3s ease-in-out forwards',
-        slideUp4: 'slideUp2 4s ease-in-out forwards',
-        slideUp5: 'slideUp 4s ease-in-out forwards',
+        slideUp: "slideUp 5s ease-in-out forwards",
+        slideUp2: "slideUp2 2s ease-in-out forwards",
+        slideUp3: "slideUp2 3s ease-in-out forwards",
+        slideUp4: "slideUp2 4s ease-in-out forwards",
+        slideUp5: "slideUp 4s ease-in-out forwards",
+
+        heroSlide1: "heroSlide 2s ease-in-out forwards",
+        opposite1: "opposite 2s ease-in-out forwards",
+        heroText1: "herotext1 2s ease-in-out forwards",
+        oppositeText1: "oppositeText1 2s ease-in-out forwards",
+        opacity1: "opacity1 2s ease-in-out forwards",
+        opacity2: "opacity2 2s ease-in-out forwards",
       },
     },
   },

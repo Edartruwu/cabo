@@ -99,7 +99,7 @@
 //                 </div>
 //               </div>
 //               <div>+</div>
-              
+
 //             </div>
 //             <p className="text-[15px] text-[#666666] font-bold">
 //               Clientes y Socios
@@ -134,7 +134,7 @@
 //                 </div>
 //               </div>
 //               <div>+</div>
-              
+
 //             </div>
 //             <p className="text-[15px] text-[#666666] font-bold">
 //               Clientes satisfechos
@@ -155,7 +155,7 @@
 //                     <p className="">1</p>
 //                 </div>
 //               </div>
-             
+
 //               <div className="h-20 overflow-hidden">
 
 //                 <div className='relative animate-slideUp3 flex flex-col space-y-2'>
@@ -196,7 +196,6 @@
 //   );
 // }
 
-
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -210,13 +209,13 @@ export default function Stats() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const index = entry.target.getAttribute('data-index');
+            const index = entry.target.getAttribute("data-index");
             entry.target.classList.add(`animate-slideUp${index}`);
             observer.unobserve(entry.target); // Stop observing once animation starts
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      { threshold: 0.1 }, // Trigger when 10% of the element is visible
     );
 
     elementsRef.current.forEach((element) => {
@@ -238,9 +237,8 @@ export default function Stats() {
   };
 
   return (
-    <main className="w-full pt-5 px-5 md:px-32">
+    <main className="w-full pt-5 px-5 md:px-32 bg-white">
       <div className="bg-[#f4f4f4] py-[40px] box-border grid md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-3 px-10">
-        
         <div className="flex flex-col text-center items-center">
           <NotepadText className="w-12 h-12 stroke-[#5f5f5f]" />
           <div className="flex flex-col">
@@ -307,7 +305,9 @@ export default function Stats() {
                 </div>
               </div>
             </div>
-            <p className="text-[15px] text-[#666666] font-bold">Envíos de paquetes</p>
+            <p className="text-[15px] text-[#666666] font-bold">
+              Envíos de paquetes
+            </p>
           </div>
         </div>
 
@@ -345,7 +345,9 @@ export default function Stats() {
               </div>
               <div>+</div>
             </div>
-            <p className="text-[15px] text-[#666666] font-bold">Clientes y Socios</p>
+            <p className="text-[15px] text-[#666666] font-bold">
+              Clientes y Socios
+            </p>
           </div>
         </div>
 
@@ -383,7 +385,9 @@ export default function Stats() {
               </div>
               <div>+</div>
             </div>
-            <p className="text-[15px] text-[#666666] font-bold">Clientes satisfechos</p>
+            <p className="text-[15px] text-[#666666] font-bold">
+              Clientes satisfechos
+            </p>
           </div>
         </div>
 
@@ -437,7 +441,9 @@ export default function Stats() {
               </div>
               <div>%</div>
             </div>
-            <p className="text-[15px] text-[#666666] font-bold">Paquetes entregados</p>
+            <p className="text-[15px] text-[#666666] font-bold">
+              Paquetes entregados
+            </p>
           </div>
         </div>
       </div>
