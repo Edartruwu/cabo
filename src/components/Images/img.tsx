@@ -48,7 +48,7 @@ export function Slide1() {
       <Image
         src="/banners/banner1.png"
         alt=""
-        className="block md:hidden w-full object-top object-cover"
+        className="block md:hidden w-full object-center object-cover"
         sizes="100%"
         // width={100}
         // height={0}
@@ -73,7 +73,7 @@ export function Slide2() {
       <Image
         src="/banners/banner2.png"
         alt=""
-        className="block md:hidden w-full object-top object-cover"
+        className="block md:hidden w-full object-center object-cover"
         sizes="100%"
         // width={100}
         // height={0}
@@ -89,7 +89,17 @@ export function Slide3() {
       <Image
         src="/banners/Banner_4.png"
         alt=""
-        className="w-full object-top object-contain"
+        className="hidden lg:block w-full object-top object-contain"
+        sizes="100%"
+        // width={100}
+        // height={0}
+        fill
+      />
+
+      <Image
+        src="/banners/banner4.png"
+        alt=""
+        className="block md:hidden w-full object-center object-cover"
         sizes="100%"
         // width={100}
         // height={0}
@@ -105,7 +115,17 @@ export function Slide4() {
       <Image
         src="/banners/Banner_3.png"
         alt=""
-        className="w-full object-top object-contain"
+        className="hidden lg:block w-full object-top object-contain"
+        sizes="100%"
+        // width={100}
+        // height={0}
+        fill
+      />
+
+      <Image
+        src="/banners/banner3.png"
+        alt=""
+        className="block md:hidden w-full object-center object-cover"
         sizes="100%"
         // width={100}
         // height={0}
@@ -121,7 +141,17 @@ export function Slide5() {
       <Image
         src="/banners/Banner_5.png"
         alt=""
-        className="w-full object-top object-contain"
+        className="hidden lg:block w-full object-top object-contain"
+        sizes="100%"
+        // width={100}
+        // height={0}
+        fill
+      />
+
+      <Image
+        src="/banner5small.png"
+        alt=""
+        className="block md:hidden w-full object-center object-cover"
         sizes="100%"
         // width={100}
         // height={0}

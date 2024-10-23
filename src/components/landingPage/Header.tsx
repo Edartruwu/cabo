@@ -123,7 +123,7 @@ export default function HeaderSection() {
             </div>
             {/* image */}
             <div
-              className={`relative row-start-1 md:row-start-2 h-[50vh] p-0 flex justify-start
+              className={`relative row-start-1 md:row-start-1 md:col-start-2 h-[50vh] lg:h-auto p-0 flex justify-start
                             ${visibleSlide === 0 && "animate-opacity1"}
                             ${isTransitioning && "animate-opacity2"}
                             `}
@@ -177,7 +177,7 @@ export default function HeaderSection() {
             </div>
             {/* image */}
             <div
-              className={`relative row-start-1 md:row-start-2 h-[50vh] p-0 flex justify-start
+              className={`relative row-start-1 md:row-start-1 md:col-start-2  h-[50vh] lg:h-auto p-0 flex justify-start
                             ${visibleSlide === 1 && "animate-opacity1"}
                             ${isTransitioning && "animate-opacity2"}
                             `}
@@ -229,7 +229,7 @@ export default function HeaderSection() {
             </div>
             {/* image */}
             <div
-              className={`relative row-start-1 md:row-start-2 h-[50vh] p-0 flex justify-start
+              className={`relative row-start-1 md:row-start-1 md:col-start-2  h-[50vh] lg:h-auto p-0 flex justify-start
                             ${visibleSlide === 2 && "animate-opacity1"}
                             ${isTransitioning && "animate-opacity2"}
                             `}
@@ -243,7 +243,7 @@ export default function HeaderSection() {
           <>
             {/* image */}
             <div
-              className={`relative row-start-1 md:row-start-2 h-[50vh] p-0 flex justify-start
+              className={`relative row-start-1 md:row-start-1 md:col-start-1  h-[50vh] lg:h-auto p-0 flex justify-start
                             ${visibleSlide === 3 && "animate-opacity1"}
                             ${isTransitioning && "animate-opacity2"}
                             `}
@@ -341,7 +341,7 @@ export default function HeaderSection() {
             </div>
             {/* image */}
             <div
-              className={`relative row-start-1 md:row-start-2 h-[50vh] p-0 flex justify-start
+              className={`relative row-start-1 md:row-start-1 md:col-start-2  h-[50vh] lg:h-auto p-0 flex justify-start
                             ${visibleSlide === 4 && "animate-opacity1"}
                             ${isTransitioning && "animate-opacity2"}
                             `}
@@ -458,9 +458,9 @@ export function NavBar() {
                     <Link key={index} href={item.url}>
                       <item.icon
                         className={`w-5 h-5
-                                            ${item.icon === Instagram ? "stroke-white fill-transparent" : "fill-white stroke-none"} 
-                                            ${item.icon === Facebook && " px-1 stroke-[#00044B] fill-[#00044B] rounded-full bg-white"} 
-                                            ${item.icon === Linkedin && " px-1 stroke-[#10203f] bg-white fill-[#00044B]"} `}
+                            ${item.icon === Instagram ? "stroke-white fill-transparent" : "fill-white stroke-none"} 
+                            ${item.icon === Facebook && " px-1 stroke-[#00044B] fill-[#00044B] rounded-full bg-white"} 
+                            ${item.icon === Linkedin && " px-1 stroke-[#10203f] bg-white fill-[#00044B]"} `}
                       />
                     </Link>
                   ))}
@@ -499,7 +499,7 @@ export function NavBar() {
                 </li>
               ))}
             </ul>
-            <Menu className="stroke-white" />
+            <Menu className="stroke-white block md:hidden" />
           </div>
         </div>
       </nav>
