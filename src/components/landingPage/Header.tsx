@@ -75,13 +75,13 @@ export default function HeaderSection() {
       {/* text and image */}
 
       <div
-        className="relative mt-0 pt-0 w-full md:h-[100vh] grid grid-cols-1  md:grid-cols-2 gap-5 md:auto-rows-fr py-0 lg:px-10 transition-opacity duration-300"
+        className="relative mt-0 pt-0 w-full md:h-[93vh] grid grid-cols-1  md:grid-cols-2 gap-0 md:auto-rows-fr py-0 lg:px-[4.6rem] transition-opacity duration-300"
         // Fade out during transition
       >
         {visibleSlide === 0 && (
           <>
             {/* text */}
-            <div className="h-full px-10 lg:px-0 flex items-center">
+            <div className="h-full px-10 lg:px-0 grid place-items-center mt-16">
               <div className="w-full flex flex-col space-y-5">
                 {/* header text */}
                 <div className="h-50 overflow-hidden">
@@ -91,7 +91,7 @@ export default function HeaderSection() {
                                         ${isTransitioning && "animate-opposite1"}
                                         }`}
                   >
-                    <h1 className="uppercase text-[40px] text-[#254FFF]">
+                    <h1 className="uppercase text-[47px] font-[500] neutra-display leading-tight text-[#254FFF]">
                       compra en usa.
                       <br />
                       Nosotros lo traemos <br />
@@ -113,7 +113,7 @@ export default function HeaderSection() {
                       Totalmente gratis
                     </h3>
                     <Link href="#">
-                      <Button className="bg-[#00044B] hover:bg-[#00044B]">
+                      <Button className="bg-[#00044B] hover:bg-[#00044B] py-6 px-6">
                         Registrate
                       </Button>
                     </Link>
@@ -136,7 +136,7 @@ export default function HeaderSection() {
         {visibleSlide === 1 && (
           <>
             {/* text */}
-            <div className="h-full px-10 lg:px-0 flex items-center">
+            <div className="h-full px-10 lg:px-0 grid place-items-center mt-16">
               <div className="w-full flex flex-col space-y-5">
                 {/* header text */}
                 <div className="h-50 overflow-hidden">
@@ -146,7 +146,7 @@ export default function HeaderSection() {
                                         ${isTransitioning && "animate-opposite1"}
                                         }`}
                   >
-                    <h1 className="uppercase text-[40px] text-[#254FFF]">
+                    <h1 className="uppercase text-[47px] font-[500] neutra-display leading-tight text-[#254FFF]">
                       un casillero en
                       <br />
                       estados unidos es <br />
@@ -167,7 +167,7 @@ export default function HeaderSection() {
                                             ${isTransitioning && "animate-oppositeText1"}`}
                   >
                     <Link href="#">
-                      <Button className="bg-[#00044B] hover:bg-[#00044B]">
+                      <Button className="bg-[#00044B] hover:bg-[#00044B] py-6 px-6">
                         Registrate
                       </Button>
                     </Link>
@@ -190,7 +190,7 @@ export default function HeaderSection() {
         {visibleSlide === 2 && (
           <>
             {/* text */}
-            <div className="h-full px-10 lg:px-0 flex items-center">
+            <div className="h-full px-10 lg:px-0 grid place-items-center mt-16">
               <div className="w-full flex flex-col space-y-5">
                 {/* header text */}
                 <div className="h-15 overflow-hidden">
@@ -200,7 +200,7 @@ export default function HeaderSection() {
                                         ${isTransitioning && "animate-opposite1"}
                                         }`}
                   >
-                    <h1 className="uppercase text-[40px] text-[#254FFF]">
+                    <h1 className="uppercase text-[47px] font-[500] neutra-display leading-tight text-[#254FFF]">
                       to casillero esta
                       <br />
                       seguro en nuestras <br />
@@ -216,7 +216,7 @@ export default function HeaderSection() {
                                             ${isTransitioning && "animate-oppositeText1"}`}
                   >
                     <Link href="#">
-                      <Button className="bg-[#00044B] hover:bg-[#00044B]">
+                      <Button className="bg-[#00044B] hover:bg-[#00044B] py-6 px-6">
                         Registrate
                       </Button>
                     </Link>
@@ -251,7 +251,7 @@ export default function HeaderSection() {
               <Slide4 />
             </div>
             {/* text */}
-            <div className="h-full px-10 lg:px-0 flex items-center">
+            <div className="h-full px-10 lg:px-0 grid place-items-center mt-16">
               <div className="w-full flex flex-col items-end space-y-5">
                 {/* header text */}
                 <div className="h-72 overflow-hidden">
@@ -281,7 +281,7 @@ export default function HeaderSection() {
                                             ${isTransitioning && "animate-oppositeText1"}`}
                   >
                     <Link href="#">
-                      <Button className="bg-[#00044B] hover:bg-[#00044B]">
+                      <Button className="bg-[#00044B] hover:bg-[#00044B] py-6 px-6">
                         Registrate
                       </Button>
                     </Link>
@@ -294,7 +294,7 @@ export default function HeaderSection() {
         {visibleSlide === 4 && (
           <>
             {/* text */}
-            <div className="h-full px-10 lg:px-0 flex items-center">
+            <div className="h-full px-10 lg:px-0 grid place-items-center mt-16">
               <div className="w-full flex flex-col space-y-5">
                 {/* header text */}
                 <div className="h-82 overflow-hidden">
@@ -304,7 +304,7 @@ export default function HeaderSection() {
                                         ${isTransitioning && "animate-opposite1"}
                                         }`}
                   >
-                    <h1 className="uppercase text-[40px] text-[#254FFF]">
+                    <h1 className="uppercase text-[47px] font-[500] neutra-display leading-tight text-[#254FFF]">
                       nos convertimos en
                       <br />
                       tu alidado para <br />
@@ -325,7 +325,7 @@ export default function HeaderSection() {
                                             ${isTransitioning && "animate-oppositeText1"}`}
                   >
                     <Link href="#">
-                      <Button className="bg-[#00044B] hover:bg-[#00044B]">
+                      <Button className="bg-[#00044B] hover:bg-[#00044B] py-6 px-6">
                         Registrate
                       </Button>
                     </Link>
@@ -448,8 +448,8 @@ export function NavBar() {
   return (
     <>
       {/* Nav */}
-      <nav className="fixed pt-5 pb-10 top-0  bg-gradient-to-b from-[#00044B]  to-transparent   w-full z-50">
-        <div className="flex  px-10 flex-col space-y-0">
+      <nav className="fixed  px-3 pt-5 pb-10 top-0  bg-gradient-to-b from-[#00044B]  to-transparent  w-full z-50">
+        <div className="flex px-[4.5rem] flex-col space-y-0">
           <div className="hidden lg:flex flex-col space-y-1">
             <div className="flex justify-end px-5 items-center">
               <div className="flex justify-between items-center text-white space-x-8">
@@ -485,7 +485,7 @@ export function NavBar() {
           </div>
 
           <div className="flex justify-between items-center text-md w-full">
-            <div className="relative w-[100.8px] h-[45.8px]">
+            <div className="relative w-[130.81px] h-[45px]">
               <Image src="/logos/logocabo-blanco.png" alt="cabo logo" fill />
             </div>
             <ul className="hidden lg:flex space-x-10">

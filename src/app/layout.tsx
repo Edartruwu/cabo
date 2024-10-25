@@ -16,6 +16,12 @@ const geistSans = localFont({
   weight: "100 900",
 });
 
+const neutraDisplay = localFont({
+  src: "./fonts/neutra-display-medium.otf",  // Path to Neutra Display font file
+  variable: "--font-neutra-display",
+  weight: "400",
+});
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
