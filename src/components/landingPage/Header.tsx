@@ -404,13 +404,14 @@ export function NavBar() {
       url: "www.facebook.com",
     },
     {
-      icon: Twitter,
-      url: "www.twitter.com",
-    },
-    {
       icon: Instagram,
       url: "www.instagram.com",
     },
+    {
+      icon: Twitter,
+      url: "www.twitter.com",
+    },
+
     {
       icon: Linkedin,
       url: "www.linkedin.com",
@@ -448,17 +449,19 @@ export function NavBar() {
   return (
     <>
       {/* Nav */}
-      <nav className="fixed  px-3 pt-5 pb-10 top-0  bg-gradient-to-b from-[#00044B]  to-transparent  w-full z-50">
-        <div className="flex px-[4.5rem] flex-col space-y-0">
-          <div className="hidden lg:flex flex-col space-y-1">
+      {/* <nav className="fixed  px-3 pt-5 pb-10 top-0  bg-gradient-to-b from-[#00044B]  to-transparent  w-full z-50"> */}
+      <nav className="fixed  px-3 pt-5 pb-10 top-0  w-full z-50">
+        <div className="flex px-[4.5rem] w-full flex-col space-y-1">
+          <div className="hidden lg:flex flex-col space-y-3">
             <div className="flex justify-end px-5 items-center">
-              <div className="flex justify-between items-center text-white space-x-8">
-                <div className="flex space-x-2">
+              <div className="flex justify-between items-center text-white space-x-[3.3rem]">
+                <div className="flex space-x-5">
                   {link.map((item, index) => (
                     <Link key={index} href={item.url}>
                       <item.icon
                         className={`w-5 h-5
-                            ${item.icon === Instagram ? "stroke-white fill-transparent" : "fill-white stroke-none"} 
+                            ${item.icon === Instagram && "stroke-white fill-transparent"} 
+                            ${item.icon === Twitter && "fill-white stroke-none"} 
                             ${item.icon === Facebook && " px-1 stroke-[#00044B] fill-[#00044B] rounded-full bg-white"} 
                             ${item.icon === Linkedin && " px-1 stroke-[#10203f] bg-white fill-[#00044B]"} `}
                       />
@@ -467,7 +470,7 @@ export function NavBar() {
                 </div>
 
                 <div>
-                  <p className="text-sm">
+                  <p className="text-[13px]">
                     Lunes a viernes de 9am a 6pm, sabados 9 a 1pm
                   </p>
                 </div>
@@ -488,7 +491,7 @@ export function NavBar() {
             <div className="relative w-[130.81px] h-[45px]">
               <Image src="/logos/logocabo-blanco.png" alt="cabo logo" fill />
             </div>
-            <ul className="hidden lg:flex space-x-10">
+            <ul className="hidden lg:flex space-x-[3.3rem]">
               {nav.map((item, index) => (
                 <li
                   key={index}

@@ -17,7 +17,7 @@ const geistSans = localFont({
 });
 
 const neutraDisplay = localFont({
-  src: "./fonts/neutra-display-medium.otf",  // Path to Neutra Display font file
+  src: "./fonts/neutra-display-medium.otf", // Path to Neutra Display font file
   variable: "--font-neutra-display",
   weight: "400",
 });

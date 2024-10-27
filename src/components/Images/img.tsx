@@ -17,6 +17,23 @@ export function AboutImg() {
   );
 }
 
+export function ServiceImg() {
+  return (
+    <>
+      <Image
+        src="/sideImg/Courrier1.webp"
+        alt=""
+        className="w-full object-bottom max-w-[80%] object-contain"
+        sizes="100%"
+        // width={100}
+        // height={0}
+        // style={{ width: "100%", height: "100%" }}
+        fill
+      />
+    </>
+  );
+}
+
 export function ProcedureImg() {
   return (
     <>

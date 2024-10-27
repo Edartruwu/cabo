@@ -64,6 +64,7 @@ const config: Config = {
         procedure: "url(/wc-bg2.webp)",
         background: "url(/banners/Banner_fondo.png)",
         registro: "url(/banners/Cabecera_Medidas_3.jpg)",
+        conconos: "url(/banners/Cabecera_Medidas_5.jpg)",
       },
       keyframes: {
         slideUp: {
@@ -99,8 +100,8 @@ const config: Config = {
           "100%": { opacity: "0" },
         },
         stretch: {
-          "0%": {height: '0%'},
-          "100%": {height: "100%"}
+          "0%": { height: "0%" },
+          "100%": { height: "100%" },
         },
       },
       animation: {
