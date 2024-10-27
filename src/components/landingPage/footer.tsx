@@ -9,6 +9,7 @@ import {
   MapPin,
   Clock,
   PhoneIcon,
+  Send,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +29,6 @@ import {
 
 import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
-import { PaperPlaneIcon } from "@radix-ui/react-icons";
 
 const formSchema = z.object({
   Email: z.string().email({
@@ -269,7 +269,7 @@ export default function Footer() {
                 type="submit"
                 className="bg-blue-600 rounded-l-none text-white hover:bg-blue-700 py-7"
               >
-                <PaperPlaneIcon />
+                <Send />
               </Button>
             </form>
           </Form>

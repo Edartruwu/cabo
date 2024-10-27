@@ -6,10 +6,10 @@ import { ServiceImg } from "../Images/img";
 
 export default function ServicDetails() {
   return (
-    <section className="py-10 px-[100px]">
-      <div className="grid grid-cols-1 md:grid-cols-2  place-items-end auto-rows-fr">
+    <section className="py-10 md:px-[100px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-end auto-rows-fr">
         {/* image */}
-        <div className="relative w-full items-end h-full flex justify-end">
+        <div className="relative px-10 lg:px-0 w-full items-center lg:items-end h-full flex justify-center lg:justify-end">
           <ServiceImg />
         </div>
         {/* text content */}

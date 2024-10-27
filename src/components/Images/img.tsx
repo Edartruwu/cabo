@@ -23,7 +23,7 @@ export function ServiceImg() {
       <Image
         src="/sideImg/Courrier1.webp"
         alt=""
-        className="w-full object-bottom max-w-[80%] object-contain"
+        className="lg:w-full w-[50%] object-center lg:object-bottom max-w-[80%] object-contain"
         sizes="100%"
         // width={100}
         // height={0}
@@ -41,6 +41,22 @@ export function ProcedureImg() {
         src="/Direccionfisica2.webp"
         alt=""
         className="w-full object-contain"
+        sizes="100%"
+        // width={100}
+        // height={0}
+        fill
+      />
+    </>
+  );
+}
+
+export function Calcula() {
+  return (
+    <>
+      <Image
+        src="/sideImg/CourrierInternacional.webp"
+        alt=""
+        className="lg:w-full w-[50%] object-top max-w-[80%] object-contain"
         sizes="100%"
         // width={100}
         // height={0}

@@ -423,36 +423,55 @@ export function NavBar() {
       text: "Incio",
     },
     {
-      link: "/conocendos",
-      text: "Conocendos",
+      link: "/conocenos",
+      text: "Conócenos",
     },
     {
-      link: "/calcula",
-      text: "Calcula tu envio",
+      link: "/calcula-tu-envio",
+      text: "Calcula tu envío",
     },
     {
-      link: "/registre",
-      text: "Registre",
+      link: "/registro",
+      text: "Regístrate",
     },
     {
-      link: "/como-funciona",
-      text: "Como Funciona",
+      link: "/como-realizar-tus-envios",
+      text: "Cómo Funciona",
     },
     {
-      link: "/conatactanos",
-      text: "Conatactanos",
+      link: "/contactanos",
+      text: "Contáctanos",
     },
   ];
 
   const pathName = usePathname();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setIsScrolled(scrollY > 30); // Set `isScrolled` to true if scrolled down
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {/* Nav */}
       {/* <nav className="fixed  px-3 pt-5 pb-10 top-0  bg-gradient-to-b from-[#00044B]  to-transparent  w-full z-50"> */}
-      <nav className="fixed  px-3 pt-5 pb-10 top-0  w-full z-50">
+      <nav className={`fixed px-3 pt-5 pb-10 top-0 w-full z-50
+          ${isScrolled ? 'bg-[#071125]' : 'bg-transparent'}
+        `}>
         <div className="flex px-[4.5rem] w-full flex-col space-y-1">
-          <div className="hidden lg:flex flex-col space-y-3">
+          <div className={`flex-col space-y-3
+              ${isScrolled ? 'hidden' : 'hidden lg:flex'}
+            `}>
             <div className="flex justify-end px-5 items-center">
               <div className="flex justify-between items-center text-white space-x-[3.3rem]">
                 <div className="flex space-x-5">
