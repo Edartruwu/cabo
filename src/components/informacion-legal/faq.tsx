@@ -8,6 +8,7 @@ interface largeContent {
     content: string[];
     link?: Link[];
     list?: List[]
+    content2?: string[]
 
   }
   
@@ -17,7 +18,6 @@ interface largeContent {
     content?: string[];
     largeContent?: largeContent[];
     extraText?: boolean;
-    content2?: string[]
 }
 
 interface Link {
@@ -555,6 +555,13 @@ export default function FAQ(){
                             </div>
                           )}
 
+                        {items.content2 && (
+                            (items.content2.map((text, index) => (
+                                <p className="text-muted-foreground" key={index}>{text}</p>
+                            )))
+
+                        )}  
+
                         </div>
                       ))}
 
@@ -574,12 +581,7 @@ export default function FAQ(){
                       )}
                     </div>
                   )}
-                  {items.content2 && (
-                            (items.content2.map((text, index) => (
-                                <p className="text-muted-foreground" key={index}>{text}</p>
-                            )))
-
-                        )}
+                 
                 </AccordionContent>
               </AccordionItem>
             ))}
