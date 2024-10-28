@@ -17,6 +17,23 @@ export function AboutImg() {
   );
 }
 
+export function FAQImg() {
+  return (
+    <>
+      <Image
+        src="/sideImg/registro_amazon.webp"
+        alt=""
+        className="lg:w-full w-[50%] object-center lg:object-bottom max-w-[80%] object-contain"
+        sizes="100%"
+        // width={100}
+        // height={0}
+        // style={{ width: "100%", height: "100%" }}
+        fill
+      />
+    </>
+  );
+}
+
 export function ServiceImg() {
   return (
     <>
@@ -58,8 +75,20 @@ export function Calcula() {
         alt=""
         className="lg:w-full w-[50%] object-top max-w-[80%] object-contain"
         sizes="100%"
-        // width={100}
-        // height={0}
+        fill
+      />
+    </>
+  );
+}
+
+export function StepsImg() {
+  return (
+    <>
+      <Image
+        src="/sideImg/ComoFunciona_v3.webp"
+        alt=""
+        className="lg:w-full w-[50%] object-top max-w-[80%] object-contain"
+        sizes="100%"
         fill
       />
     </>

@@ -32,7 +32,6 @@ export default function HeaderComponent() {
           </Breadcrumb>
         </div>
       </div>
-
     </main>
   );
 }

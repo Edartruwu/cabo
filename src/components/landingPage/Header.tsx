@@ -465,13 +465,17 @@ export function NavBar() {
     <>
       {/* Nav */}
       {/* <nav className="fixed  px-3 pt-5 pb-10 top-0  bg-gradient-to-b from-[#00044B]  to-transparent  w-full z-50"> */}
-      <nav className={`fixed px-3 pt-5 pb-10 top-0 w-full z-50
-          ${isScrolled ? 'bg-[#071125]' : 'bg-transparent'}
-        `}>
+      <nav
+        className={`fixed px-3 pt-5 pb-10 top-0 w-full z-50
+          ${isScrolled ? "bg-[#071125]" : "bg-transparent"}
+        `}
+      >
         <div className="flex px-[4.5rem] w-full flex-col space-y-1">
-          <div className={`flex-col space-y-3
-              ${isScrolled ? 'hidden' : 'hidden lg:flex'}
-            `}>
+          <div
+            className={`flex-col space-y-3
+              ${isScrolled ? "hidden" : "hidden lg:flex"}
+            `}
+          >
             <div className="flex justify-end px-5 items-center">
               <div className="flex justify-between items-center text-white space-x-[3.3rem]">
                 <div className="flex space-x-5">

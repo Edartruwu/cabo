@@ -9,6 +9,7 @@ import {
 import { Phone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { FAQImg } from "@/components/Images/img";
 
 interface largeContent {
   content: string;
@@ -21,10 +22,14 @@ interface Accordion {
   content: string[];
   largeContent?: largeContent[];
   list?: string[];
-  link?: textProps[];
+  link?: linkProps[];
 }
 
 interface textProps {
+  text: string[];
+  // link: string
+}
+interface linkProps {
   text: string[];
   link: string;
 }
@@ -67,37 +72,65 @@ export default function FAQ() {
     },
     {
       id: "2",
-      trigger: "¿Debo pagar algún impuesto por la importación?",
+      trigger: "¿Cuantas veces puedo importar?",
       content: [
-        "Todo envío a Perú que no exceda los US$199.99, están inafectos al pago de impuestos. En caso de que la suma de todos tus productos exceda los US$200.00 y menor que US$2,000.00, los impuestos o derechos son calculados en base a:",
-      ],
-      list: [
-        "FOB: valor del producto según factura",
-        "CIF: flete + seguro",
-        "Arancel: CIF x tasa de arancel (4%)",
-        "IGV: Arancel x 18%",
-      ],
-      largeContent: [
-        {
-          content:
-            "La aduana en Perú calcula como costo de transporte y seguro cada libra x 3.5 dólares, pero muchas veces, tiene cantidades predefinidas y que dependen del valor y tipo de producto.",
-          link: "www.sunat.gob.pe",
-        },
+        "Si no posees RUC el límite es de 3 importaciones al año con DNI, una vez superes el límite comunícate con nosotros para poder guiarte en el trámite.",
+        "Si posees RUC no existe límite en las veces que puedes importar, realizarlo con RUC no se generarán costos adicionales como impuestos, multas, entre otros.",
       ],
     },
     {
       id: "3",
-      trigger:
-        "¿Qué debo tener en cuenta al brindar el costo de mis productos?",
+      trigger: "¿Cuál es el tiempo de entrega de tus paquetes?",
       content: [
-        "Debes tener en cuenta el valor total de la compra, incluyendo impuestos o taxes y costos de shipping hasta tu casillero.",
+        "El tiempo de entrega que manejamos es de 7 a 10 días hábiles, desde el momento que recibimos tus instrucciones de embarque (por correo electrónico) adjuntando la documentación requerida. El tiempo estimado puede variar teniendo en cuenta las fechas especiales (acción de gracias, navidad), feriados locales o de Estados Unidos, condiciones climatológicas (retraso de vuelos) y variaciones en itinerarios aéreos",
       ],
     },
     {
       id: "4",
-      trigger: "¿Cómo calcular el peso de mis productos?",
+      trigger: "¿Cuándo se deberá pagar impuestos y aranceles en la aduana?",
       content: [
-        "En algunas tiendas de Internet al terminar de hacer la compra te brindan la información del peso. Otra forma de saber es cuando la tienda realiza el shipping o envío de los productos hacia tu casillero, esta información la encuentras en el tracking que te brindan.",
+        "Los envíos cuyo valor FOB es menor a 200 dólares (incluido Shipping dentro de USA e impuestos de USA) no estarán afectos al pago de aranceles (ad-valorem, ni IGV). Cualquier artículo que cueste entre US$ 200.01 y US$ 2,000 estará sujeto al pago de aranceles (ad-valórem, IGV, entre otros según corresponda según el tipo de producto), para más información ingresar al siguiente link",
+      ],
+      link: [
+        {
+          text: ["(http://www.aduanet.gob.pe/itarancel/arancelS01Alias )"],
+          link: "http://www.aduanet.gob.pe/itarancel/arancelS01Alias",
+        },
+      ],
+    },
+    {
+      id: "5",
+      trigger: "¿Cómo rastrear mis paquetes hasta Perú?",
+      content: [
+        "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In hac habitasse platea dictumst. Fusce consectetur tincidunt odio ac malesuada. Praesent maximus pretium.",
+      ],
+    },
+    {
+      id: "6",
+      trigger: "¿Puedo importar de otros países aparte de Estados Unidos?",
+      content: [
+        "Sí, el único requisito es que todas las compras que realices debes enviarlo a tu casillero registrado en Doral, Flórida. Una vez recepcionado en nuestras bodegas y registriado con un WR (Wearehouse), queda disponible para que puedas enviarn os instrucciónes para el envío de tus paquetes a Perú. ",
+      ],
+    },
+    {
+      id: "7",
+      trigger: "¿Qué pasa cuando mis compras llegan al almacén en Miami?",
+      content: [
+        "Por cada compra que realice y llegue a nuestros almacenes, recibirá por correo un número de Warehouse (Ej. WR0000001), Esto será útil para completar el siguiente paso",
+      ],
+    },
+    {
+      id: "8",
+      trigger: "¿Cuánto cuesta?",
+      content: [
+        "Las tarifas se calculan de acuerdo con el peso de tus paquetes, además de la tarifa por entrega dentro de Lima metropolitana de acuerdo con el distrito. Si el envío es para provincias se gestiona a través del operador local. Para productos con un costo mayor a US$ 200 dólares, se recomienda previamente comunicarse con nosotros para brindarle los costos aproximados en relación al pago de aranceles a los que su producto estaría afecto o en caso de que tus productos tengan alguna restricción y requiere algún tipo de permiso para la importación (MTC – DIGESA – DIGEMID, etc.)",
+      ],
+    },
+    {
+      id: "9",
+      trigger: "¿Cómo funciona mi casillero virtual?",
+      content: [
+        "Antes de iniciar tu proceso de compra en tu tienda favorita dentro de estados Unidos, o cualquier país debes registrarte para obtener un casillero virtual: Completa todos tus datos A vuelta de correo recibirás un número de casillero y dirección física de nuestra bodega. Realiza tus compras. Recuerda ingresar la dirección física de nuestras bodegas, tu número de casillero según muestra. La entrega de tus paquetes de realizará en la dirección que envíes por correo de acuerdo con tus instrucciones.",
       ],
     },
   ];
@@ -105,16 +138,8 @@ export default function FAQ() {
   const text: textProps[] = [
     {
       text: [
-        "El tiempo de entrega promedio es de 7 días dependiendo el destino en condiciones regulares.*",
-        "No está considerado entre los tiempos de entrega los retrasos de aereolíneas y de aduanas.",
-        "Siempre se va a requerir la factura comercial o la “Order Confirmation” para el desaduanaje en Lima.",
-        "Recuerde contar con su DNI o RUC actualizado y activo.",
-        "Todas las entregas son a domicilio sin excepción.",
-        "Si el envío es hacia provincia, el cliente debe de cubrir el costo de envío a través de la agencia de su preferencia.",
-        "CABO Courier no es responsable del embalaje de los productos comprados por el cliente, estos son enviados tal cual se reciben en nuestras bodegas (no abrimos paquetes). Es importante indicar a la tienda donde compra que protejan bien los productos.",
-        "Existe productos que necesitan permisos especiales, recomendamos revisar la  página:",
+        "Esta es la forma correcta como debes registrar la dirección de tu casillero. Tomando como ejemplo, el registro en amazon.com",
       ],
-      link: "http://www.aduanet.gob.pe/servlet/AICONSMrestri",
     },
   ];
 
@@ -123,7 +148,7 @@ export default function FAQ() {
       <div className="grid grid-cols-1 lg:grid-cols-2 auto-rows-fr gap-10">
         <div className="flex flex-col space-y-3">
           <h3 className="text-[#003440] text-[36px] font-[700]">
-            Algunas Consultas
+            Preguntas frecuentes
           </h3>
 
           <Accordion
@@ -189,28 +214,25 @@ export default function FAQ() {
           </Accordion>
         </div>
 
-        <div className="flex flex-col space-y-3">
-          <h3 className="text-[#003440] text-[36px] font-[700]">
-            Nos diferenciamos
+        <div className="flex flex-col space-y-5 lg:space-y-3">
+          <h3 className="text-[#003440] text-[36px] font-[700] lg:w-[80%]">
+            Registro de dirección del casillero
           </h3>
           <div className="flex flex-col space-y-2">
             {text.map((items, index) => (
-              <div key={index} className="flex px-8 flex-col space-y-3">
+              <div key={index} className="flex flex-col space-y-3">
                 <div className="flex flex-col space-y-1 text-muted-foreground text-md">
                   {items.text.map((items, index) => (
                     <p key={index}>{items}</p>
                   ))}
                 </div>
-                <Link
-                  href={items.link}
-                  className="font-bold text-muted-foreground"
-                >
-                  {items.link}
-                </Link>
               </div>
             ))}
+            <div className="relative w-full h-[500px]">
+              <FAQImg />
+            </div>
 
-            <div className="text-muted-foreground text-md ">
+            <div className="text-muted-foreground text-md lg:mt-auto mt-5 ">
               Si tiene alguna duda, nos puede contcatar a traves de nuestro
               servicio de antención al cliente por whatsapp{" "}
               <Link
