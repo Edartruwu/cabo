@@ -13,14 +13,13 @@ import {
   //   FormDescription,
   FormField,
   FormItem,
-  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
-import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import Link from "next/link";
+import { Checkbox } from "../ui/checkbox";
+import { Textarea } from "../ui/textarea";
 
 interface FormFeatures {
   icon: React.ElementType;
@@ -133,6 +132,9 @@ export function FormFields() {
       message: "",
     },
   });
+
+  const [acceptedTerms, setAcceptedTerms] = useState<boolean>(false)
+
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
   }
@@ -145,11 +147,109 @@ export function FormFields() {
         onSubmit={form.handleSubmit(onSubmit)}
         className="bg-[#f4f4f4] space-y-5 md:px-10 py-10"
       >
+        <h3 className="text-center font-bold text-[36px] text-[#003440]">Escríbenos!</h3>
+
+        <div className="flex space-x-10 w-full items-baseline">
+
+          <FormField 
+            name="fullName"
+            render={(({field}) => (
+              <FormItem className="w-full">
+                  <FormControl className="w-full">
+                    <Input 
+                      {...field}
+                      placeholder='Nombre y Apellid*'
+                      className="bg-white w-full py-5"
+                    />
+                  </FormControl>
+              </FormItem>
+            ))}
+          />
+
+          <FormField
+            name="emailAddress"
+            render={(({field}) => (
+              <FormItem className="w-full">
+                <FormControl className="w-full">
+                  <Input 
+                    {...field}
+                    placeholder='Correno electonico'
+                    className="bg-white w-full py-5"
+                  />
+                </FormControl>
+              </FormItem>
+            ))}
+          />
+        </div>
+        
+        <div className="flex space-x-10 w-full items-baseline">
+
+          <FormField 
+            name="phoneNumber"
+            render={(({field}) => (
+              <FormItem className="w-full">
+                  <FormControl className="w-full">
+                    <Input 
+                      {...field}
+                      placeholder='Telefono de contacto'
+                      className="bg-white w-full py-5"
+                      type="tel"
+                    />
+                  </FormControl>
+              </FormItem>
+            ))}
+          />
+
+          <FormField
+            name="Asunto"
+            render={(({field}) => (
+              <FormItem className="w-full">
+                <FormControl className="w-full">
+                  <Input 
+                    {...field}
+                    placeholder='Asunto'
+                    className="bg-white w-full py-5"
+                  />
+                </FormControl>
+              </FormItem>
+            ))}
+          />
+        </div>
+
+        <FormField 
+          name='message'
+          render={(({field}) => (
+            <FormItem>
+              <FormControl>
+              <Textarea
+                {...field}
+                placeholder="Tu mesanje..." 
+                className="bg-white min-h-56"
+                />
+              </FormControl>
+            </FormItem>
+          ))}
+        />
+        <div className="flex items-center space-x-2">
+          <Checkbox 
+          id="terms" 
+          onClick={() => setAcceptedTerms(true)}
+          className="zinc-500"/>
+          <label
+            htmlFor="terms"
+            className="text-sm text-muted-foreground font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            onClick={() => setAcceptedTerms(true)}
+          >
+            Accept terms and conditions
+          </label>
+        </div>
+
         <Button
           className="w-full bg-[#182D54] py-6 hover:bg-[#041a1f]"
           type="submit"
+          disabled={!acceptedTerms}
         >
-          Registrate
+          Envia
         </Button>
       </form>
     </Form>
