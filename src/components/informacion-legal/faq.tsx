@@ -555,8 +555,8 @@ export default function FAQ(){
                             </div>
                           )}
 
-                        {items.content2 && (
-                            (items.content2.map((text, index) => (
+                        {item.content2 && (
+                            (item.content2.map((text, index) => (
                                 <p className="text-muted-foreground" key={index}>{text}</p>
                             )))
 
