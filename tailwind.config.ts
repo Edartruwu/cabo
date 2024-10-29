@@ -59,6 +59,7 @@ const config: Config = {
       },
       gridTemplateColumns: {
         procedure: ".7fr .3fr",
+        header: "1fr .7fr",
       },
       backgroundImage: {
         procedure: "url(/wc-bg2.webp)",
